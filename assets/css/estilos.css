@@ -104,10 +104,17 @@ body {
 
 .principal {
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 
 .titulo-pagina {
     font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.titulo-secao {
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -116,6 +123,10 @@ body {
     border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
+}
+
+.cartao--destaque {
+    margin-bottom: 16px;
 }
 
 .cartao__conteudo {
@@ -152,6 +163,11 @@ body {
     margin-right: 8px;
 }
 
+.cartao__info--moeda::before {
+    content: "\e905";
+    margin-right: 8px;
+}
+
 .cartao__info--visualizacao::before {
     content: "\e90f";
     margin-right: 8px;
@@ -166,10 +182,16 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
 }
 
 .cartao__botao--play::before {
     content: "\e90b";
+    font-size: 24px;
+}
+
+.cartao__botao--cart::before {
+    content: "\e901";
     font-size: 24px;
 }
 
@@ -180,4 +202,9 @@ body {
 
 .cartao__botao--destaque::before {
     margin-right: 8px;
+}
+
+.secao {
+    display: grid;
+    gap: 16px;
 }
